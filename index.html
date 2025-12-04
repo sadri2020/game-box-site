@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>پرده‌برداری از بازی — جعبه</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app">
+    <section class="stage">
+      <button id="box" class="box" aria-label="باز کردن جعبه (کلیک یا اینتر)">
+        <span class="lid"></span>
+        <span class="base"></span>
+      </button>
+
+      <div id="reveal" class="reveal" aria-hidden="true">
+        <h1 id="game-title">نام بازی شما</h1>
+        <p id="game-desc">یک جمله کوتاه معرفی بازی که کنجکاوی ایجاد می‌کند. ویژگی‌ها: داستان‌محور، مکانیک آغوش، موسیقی دینامیک.</p>
+
+        <!-- Netlify-ready form -->
+        <form id="subscribe-form" name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
+          <input type="hidden" name="form-name" value="subscribe" />
+          <p class="sr-only" style="display:none">
+            <label>اگر انسان نیستی این را خالی بگذار: <input name="bot-field" /></label>
+          </p>
+
+          <label for="email">ایمیل خود را وارد کنید</label>
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com" required />
+
+          <div class="actions">
+            <button type="submit">دنبال کن</button>
+          </div>
+
+          <p id="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>© تمامی حقوق محفوظ است — Persis Play Studio</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
