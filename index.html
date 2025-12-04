@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="fa" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Unboxing King</title>
+  <title>Unboxing King Game</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <main id="app">
     <section class="stage">
-      <button id="box" class="box" aria-label="Unbox it (Click or press Enter!)">
+      <button id="box" class="box" aria-label="Open the box (click or Enter)">
         <span class="lid"></span>
         <span class="base"></span>
       </button>
@@ -22,14 +22,14 @@
         <form id="subscribe-form" name="subscribe" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
           <input type="hidden" name="form-name" value="subscribe" />
           <p class="sr-only" style="display:none">
-            <label>If you are not human, leave this blank: <input name="bot-field" /></label>
+            <label>If you are not human leave this empty: <input name="bot-field" /></label>
           </p>
 
           <label for="email">Enter your email</label>
           <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com" required />
 
           <div class="actions">
-            <button type="submit">Follow</button>
+            <button type="submit">Subscribe</button>
           </div>
 
           <p id="form-msg" role="status" aria-live="polite"></p>
@@ -38,7 +38,7 @@
     </section>
 
     <footer class="footer">
-      <small>© All rights reserved.</small>
+      <small>© All rights reserved</small>
     </footer>
   </main>
 
